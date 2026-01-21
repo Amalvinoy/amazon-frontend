@@ -3,12 +3,12 @@ import commonAPI from './commonAPI';
 
 //register user
 export const registerUserAPI = async (reqBody) => {
-    return await commonAPI("POST",`${serverURL}/api/register`, reqBody, {});
+    return await commonAPI("POST",`${serverURL}/api/registerUser`, reqBody, {});
 }
 
 //login user
 export const loginUserAPI = async (reqBody) => {
-    return await commonAPI("POST",`${serverURL}/api/login`, reqBody, {});
+    return await commonAPI("POST",`${serverURL}/api/loginUser`, reqBody, {});
 }
 
 //add product

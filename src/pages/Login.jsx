@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { loginUserAPI } from '../services/allAPIs';
+import { useNavigate } from "react-router-dom";
 
 export default function AmazonLogin() {
   const [form, setForm] = useState({ email: '', password: '' });
@@ -13,6 +14,7 @@ export default function AmazonLogin() {
     setSuccess('');
   };
 
+  const navigate = useNavigate();
   const handleLogin = async () => {
     setLoading(true);
     setError('');
@@ -30,6 +32,8 @@ export default function AmazonLogin() {
       } else {
         setError(res?.data?.message || 'Login failed.');
       }
+      // Redirect to home page
+      navigate("/");
     } catch (err) {
       setError(err?.response?.data?.message || 'Login failed.');
     }

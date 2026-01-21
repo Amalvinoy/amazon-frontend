@@ -1,3 +1,4 @@
+import Header from "../components/Header";
 export default function AmazonAppliancesPage() {
   const products = [
     {
@@ -135,22 +136,9 @@ export default function AmazonAppliancesPage() {
   ];
 
   return (
+    <>
+      <Header />
     <div className="bg-white">
-      <div className="border-b border-gray-300 bg-gray-50 px-4 py-2">
-        <div className="max-w-7xl mx-auto flex gap-4 text-xs overflow-x-auto">
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Amazon Home</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Kitchen & Home Appliances</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Large Appliances</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Kitchen & Dining</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Furniture</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Home Furnishing</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Home Decor</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Home Improvement</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Garden Outdoor</a>
-          <a href="#" className="whitespace-nowrap hover:text-orange-700">Storage & Organisation</a>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 py-6">
         <div className="flex gap-6">
           <div className="w-64 flex-shrink-0">
@@ -410,5 +398,6 @@ export default function AmazonAppliancesPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

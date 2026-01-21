@@ -103,7 +103,7 @@ export default function AmazonHeader() {
               <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
           </a>
-          <a href="#" className="hover:border border-white rounded px-2 py-1">Electronics</a>
+          <a href="/appliances" className="hover:border border-white rounded px-2 py-1">Electronics</a>
           <a href="#" className="hover:border border-white rounded px-2 py-1">Fashion</a>
           <a href="#" className="hover:border border-white rounded px-2 py-1">New Releases</a>
           <a href="#" className="hover:border border-white rounded px-2 py-1">Home & Kitchen</a>
