@@ -33,7 +33,7 @@ export default function AmazonLogin() {
         setError(res?.data?.message || 'Login failed.');
       }
       // Redirect to home page
-      navigate("/");
+      navigate("/home");
     } catch (err) {
       setError(err?.response?.data?.message || 'Login failed.');
     }
